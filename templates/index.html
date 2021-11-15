@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale">
 
-        <!--UNICONS-->
+        <!--Styling-->
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,21 +14,18 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
-
-
         <!--Swipper.css-->
-    
-        <link href="stylesheet" href="">
 
-
+        <!-- Title -->
+        <title>Abhishek Portfolio</title>
         <!--CSS-->
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
-        <title>Abhishek Portfolio</title>
-
+        
+        
 </head>
     <body>
         <!--Header-->
-
+        
         <header class="header" id="header">
             <nav class="nav container">
                 <a href ="#" class="nav__logo">Abhishek</a>
@@ -334,6 +331,121 @@
             </section>
 
             <!--Qualification-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">Journey so far</span>
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!-- Qualification Content 2-->
+                        <div class="qualification__content">
+                            <!-- Qualification 1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Master's in Computer Science</h3>
+                                    <span class = "qualification__subtitle">Illinois Institute of Technology - Chicago, Illinois</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jan 2021 - May 2023 (Expected)
+                                    </div>
+                                </div>
+                            
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+                            <!-- Qualification 2-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Bachelor of Technology in Computer Science</h3>
+                                    <span class = "qualification__subtitle">University of Petroleum and Energy Studies - Dehradun, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jun 2013 - Jun 2017
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            </div>
+                        
+                        <!-- Qualification Content 1-->
+                        <div class="qualification__content">
+                            <!-- Qualification 1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Graduate Teaching Assistant</h3>
+                                    <span class = "qualification__subtitle">Illinois Institute of Technology - Chicago, Illinois</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Sept 2021 - Till now
+                                    </div>
+                                </div>
+                            
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+                            <!-- Qualification 2-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Software Developer</h3>
+                                    <span class = "qualification__subtitle">Must Discover Private Limited, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jul 2017 - Apr 2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Qualification 3-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Android Developer Intern</h3>
+                                    <span class = "qualification__subtitle">Nuriss LifeCare Private Limited, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        May 2016 - Jul 2016
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!--Services-->
             <!--Portfolio-->
             <!--Projects-->
@@ -346,11 +458,9 @@
 
 
         <!--Swipper JS-->
-        <script src=""></script>
 
         <!--Main JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <link rel= "script" type= "text/javascript" href= "{{ url_for('static',filename='js/main.js') }}">
+        <script type="text/javascript" src="static/js/main.js"></script>
     </body>
 </html>
     
