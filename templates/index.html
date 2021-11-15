@@ -15,13 +15,13 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--Swipper.css-->
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/swiper-bundle.min.css') }}">
 
         <!-- Title -->
         <title>Abhishek Portfolio</title>
         <!--CSS-->
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
-        
-        
+
 </head>
     <body>
         <!--Header-->
@@ -553,7 +553,74 @@
                 </div>
             </section>
             <!--Portfolio-->
+            <section class="portfolio section" id ="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most Recent work</span>
 
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper"> 
+                        <!-- Portfolio-1 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="/static/img/recommend.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Movie Recommender</h3>
+                                <p class="portfolio__description">Content based movie recommendation system 
+                                    using cosine-similarity, TF-IDF, Counter Vectorizer model and deployed on Heroku. Website adaptable to all devices, with UI componets and animated interaction.</p>
+                                    <a href="https://movie-igniter.herokuapp.com/" class="button button--flex--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Portfolio-2 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="/static/img/mapnew.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Illinois Cafeteria</h3>
+                                <p class="portfolio__description">Machine Learning Model which suggests a location to open a Cafeteria in Illinois.
+                                    Used K-Means Clustering, an unsupervised machine learning model which helps to group together suburbs having similar facilities. 
+                                    It will help a business owner who is planning to open up a Cafés in a location by exploring better facilities around the Suburbs or near location.</p>
+                                    <a href="https://github.com/abhik12295/illinois_open_cafetaria/" class="button button--flex--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Portfolio-3 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="/static/img/credit.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Credit Card Fraud Detection</h3>
+                                <p class="portfolio__description">Used Linear Regression Model and then after Isolation Forest method to detect the fraud and anomaly detection.
+                                    Isolation Forest has a 99.74% more accurate than Linear Regression of 93.4%.
+                                </p>
+                                    <a href="https://github.com/abhik12295/credit_card_fraud_detection" class="button button--flex--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Add arrow-->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!--Add Pagination-->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
 
             <!--Projects-->
 
@@ -565,6 +632,8 @@
 
 
         <!--Swipper JS-->
+        <script type="text/javascript" src="static/js/swiper-bundle.min.js"></script>
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
         <!--Main JS-->
         <script type="text/javascript" src="static/js/main.js"></script>
